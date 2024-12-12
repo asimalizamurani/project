@@ -4785,11 +4785,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Aptech E-Project\\Third Semister\\csharp-progamming\\Handlingform\\Handlingform.csproj",
+      "projectUniqueName": "D:\\Aptech E-Project\\Third Semister\\project\\Handlingform\\Handlingform.csproj",
       "projectName": "Handlingform",
-      "projectPath": "D:\\Aptech E-Project\\Third Semister\\csharp-progamming\\Handlingform\\Handlingform.csproj",
+      "projectPath": "D:\\Aptech E-Project\\Third Semister\\project\\Handlingform\\Handlingform.csproj",
       "packagesPath": "C:\\Users\\asima\\.nuget\\packages\\",
-      "outputPath": "D:\\Aptech E-Project\\Third Semister\\csharp-progamming\\Handlingform\\obj\\",
+      "outputPath": "D:\\Aptech E-Project\\Third Semister\\project\\Handlingform\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
