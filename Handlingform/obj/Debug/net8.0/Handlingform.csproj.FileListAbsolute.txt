@@ -507,3 +507,4 @@ D:\Aptech E-Project\Third Semister\project\Handlingform\obj\Debug\net8.0\refint\
 D:\Aptech E-Project\Third Semister\project\Handlingform\obj\Debug\net8.0\Handlingform.pdb
 D:\Aptech E-Project\Third Semister\project\Handlingform\obj\Debug\net8.0\Handlingform.genruntimeconfig.cache
 D:\Aptech E-Project\Third Semister\project\Handlingform\obj\Debug\net8.0\ref\Handlingform.dll
+D:\Aptech E-Project\Third Semister\project\Handlingform\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Handlingform.Models.Vacancy>
+
+<h2>Vacancies</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Department</th>
+            <th>Available Positions</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vacan in Model)
+        {
+            <tr>
+                <td>@vacan.Title</td>
+                <td>@vacan.Department</td>
+                <td>@vacan.PositionsAvailable</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Vacancy", new { id = vacan.VacancyId })">Edit</a>
+                    <a href="@Url.Action("Create", "Vacancy")">Create</a>
+                    <a href="@Url.Action("Delete", "Vacancy", new { id = vacan.VacancyId })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Vacancy")">Create New Vacancy</a>

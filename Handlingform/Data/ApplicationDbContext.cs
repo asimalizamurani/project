@@ -11,6 +11,10 @@ namespace Handlingform.Data
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Applicant> Applicants { get; set; }
+        public DbSet<Vacancy> Vacancies { get; set; }
+        public DbSet<Interview> Interviews { get; set; }
+        public DbSet<Department> Departments { get; set; }
 
     }
 }

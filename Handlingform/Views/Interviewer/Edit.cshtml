@@ -1,0 +1,20 @@
+﻿@model Handlingform.Models.Interview
+
+<h2>Edit Interview</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" name="InterviewId" value="@Model.InterviewId" />
+
+    <label for="ApplicantName">Applicant Name</label>
+    <input type="text" id="ApplicantName" name="ApplicantName" value="@Model.Applicant" readonly />
+
+    <label for="InterviewerName">Interviewer Name</label>
+    <input type="text" id="InterviewerName" name="InterviewerName" value="@Model.Interviewer" />
+
+    <label for="InterviewDate">Interview Date</label>
+    <input type="datetime-local" id="InterviewDate" name="InterviewDate"
+           value="@Model.InterviewDate.ToString("yyyy-MM-ddTHH:mm")" />
+
+
+    <button type="submit">Save Changes</button>
+</form>

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Handlingform.Models.Interview>
+
+<h2>Interviews</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Applicant Name</th>
+            <th>Interviewer</th>
+            <th>Interview Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var interview in Model)
+        {
+            <tr>
+                <td>@interview.Applicant</td>
+                <td>@interview.Interviewer</td>
+                <td>@interview.InterviewDate</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Interviewer", new { id = interview.InterviewId })">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="nav-link" asp-area="" asp-controller="Interviewer" asp-action="Edit">Edit it</a>

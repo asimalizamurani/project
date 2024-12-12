@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Handlingform.Models.Applicant>
+
+<h2>Applicants</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var applicant in Model)
+        {
+            <tr>
+                <td>@applicant.Name</td>
+                <td>@applicant.Email</td>
+                <td>@applicant.Role</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Applicant", new { id = applicant.ApplicantId })">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Applicant")">Add New Applicant</a>
